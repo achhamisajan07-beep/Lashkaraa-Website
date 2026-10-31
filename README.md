@@ -12,4 +12,4 @@ python -m http.server 8000
 
 Then visit `http://localhost:8000`.
 
-The hero video and its poster image are included in the `video` and `image` folders. Collection and product photography loads from Unsplash.
+All page images are included in the `images` folder. The hero video is included in the `video` folder.

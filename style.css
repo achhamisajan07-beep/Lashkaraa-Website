@@ -306,19 +306,19 @@ a {
 }
 
 .collection-ready {
-    background-image: url("https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=800&q=85");
+    background-image: url("images/collection-ready.jpg");
 }
 
 .collection-loved {
-    background-image: url("https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=800&q=85");
+    background-image: url("images/collection-bestsellers.jpg");
 }
 
 .collection-new {
-    background-image: url("https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=800&q=85");
+    background-image: url("images/collection-arrivals.jpg");
 }
 
 .collection-occasion {
-    background-image: url("https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&w=800&q=85");
+    background-image: url("images/collection-celebration.jpg");
 }
 
 .collection-label {
@@ -346,7 +346,7 @@ a {
 .story-image {
     min-height: 460px;
     background-color: #c4b099;
-    background-image: linear-gradient(0deg, rgb(32 24 20 / 12%), transparent), url("image/4428d78975f3485b9c9b02b25e94519c.thumbnail.0000000000_400x.webp");
+    background-image: linear-gradient(0deg, rgb(32 24 20 / 12%), transparent), url("images/campaign-poster.webp");
     background-position: center;
     background-size: cover;
 }
@@ -424,19 +424,19 @@ a {
 }
 
 .product-blue {
-    background-image: url("https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=800&q=85");
+    background-image: url("images/collection-ready.jpg");
 }
 
 .product-rose {
-    background-image: url("https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=800&q=85");
+    background-image: url("images/collection-bestsellers.jpg");
 }
 
 .product-gold {
-    background-image: url("https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=800&q=85");
+    background-image: url("images/collection-arrivals.jpg");
 }
 
 .product-green {
-    background-image: url("https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&w=800&q=85");
+    background-image: url("images/collection-celebration.jpg");
 }
 
 .product-tag {
