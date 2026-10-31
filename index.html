@@ -1,151 +1,352 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-AU">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#101b2c">
-    <meta name="description" content="Discover occasionwear, handcrafted details and timeless Indian fashion.">
-    <title>Lashkaraa — Indian Occasionwear</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#061b36">
+  <meta name="description" content="Discover Indian occasionwear, handcrafted details and timeless fashion at Lashkaraa Australia.">
+  <title>Indian Clothes Online in Australia | Lashkaraa</title>
+  <link rel="preconnect" href="https://www.lashkaraa.com">
+  <link rel="preconnect" href="https://cdn.shopify.com">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="site-header">
-        <details class="menu-control">
-            <summary class="icon-button menu-button" aria-label="Open menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </summary>
-            <nav class="menu-panel" aria-label="Main navigation">
-                <a href="#collections">Women</a>
-                <a href="#collections">Men</a>
-                <a href="#collections">Kids</a>
-                <a href="#collections">Accessories</a>
-                <a href="#about">Discover</a>
-                <a href="#ready-to-ship">Sale</a>
-            </nav>
-        </details>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-        <a class="wordmark" href="#" aria-label="Lashkaraa home">LASHKARAA</a>
+  <header class="site-header">
+    <button class="icon-button menu-button" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu-panel">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="primary-nav" aria-label="Shop categories">
+      <a href="https://www.lashkaraa.com/en-au/collections/women">Women</a>
+      <a href="https://www.lashkaraa.com/en-au/collections/mens">Men</a>
+      <a href="https://www.lashkaraa.com/en-au/collections/kids">Kids</a>
+      <a href="https://www.lashkaraa.com/en-au/collections/accessories">Accessories</a>
+      <a href="https://www.lashkaraa.com/en-au/pages/about-us">Discover</a>
+      <a href="https://www.lashkaraa.com/en-au/collections/sale">Sale</a>
+    </nav>
+    <a class="brand" href="#top" aria-label="Lashkaraa home">
+      <img src="https://www.lashkaraa.com/cdn/shop/files/theme-logo.png?v=1709477478&amp;width=320" alt="Lashkaraa">
+    </a>
+    <div class="header-actions">
+      <form class="desktop-search" role="search">
+        <label class="visually-hidden" for="desktop-search-input">Search products</label>
+        <input id="desktop-search-input" type="search" placeholder="Try searching for...Sarees" autocomplete="off">
+        <button class="icon-button" type="submit" aria-label="Search">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg>
+        </button>
+      </form>
+      <button class="currency-selector" type="button" aria-label="Country and currency: Australia, Australian dollars">
+        <img src="https://cdn.shopify.com/static/images/flags/au.svg" alt="">
+        <span>AUD $</span>
+        <svg viewBox="0 0 12 8" aria-hidden="true"><path d="m1 1 5 5 5-5"></path></svg>
+      </button>
+      <nav class="utility-nav" aria-label="Shopping tools">
+        <button class="icon-button search-button" type="button" aria-label="Search" aria-expanded="false" aria-controls="search-panel">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg>
+        </button>
+        <a class="icon-button" href="https://www.lashkaraa.com/en-au/account/login" aria-label="Account">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="7.5" r="3.5"></circle><path d="M4.5 21c.6-4.1 3.2-6.2 7.5-6.2s6.9 2.1 7.5 6.2"></path></svg>
+        </a>
+        <a class="icon-button bag-link" href="https://www.lashkaraa.com/en-au/cart" aria-label="Shopping bag">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16l-1.2 13H5.2L4 8Z"></path><path d="M8.5 9V6a3.5 3.5 0 0 1 7 0v3"></path></svg>
+        </a>
+      </nav>
+    </div>
+  </header>
 
-        <nav class="utility-nav" aria-label="Shopping tools">
-            <a class="icon-button" href="#collections" aria-label="Search">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg>
-            </a>
-            <a class="icon-button account-link" href="#about" aria-label="Account">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="7.5" r="3.5"></circle><path d="M4.5 21c.6-4.1 3.2-6.2 7.5-6.2s6.9 2.1 7.5 6.2"></path></svg>
-            </a>
-            <a class="icon-button bag-link" href="#ready-to-ship" aria-label="Shopping bag">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16l-1.2 13H5.2L4 8Z"></path><path d="M8.5 9V6a3.5 3.5 0 0 1 7 0v3"></path></svg>
-            </a>
-        </nav>
-    </header>
+  <nav class="menu-panel" id="menu-panel" aria-label="Main navigation" hidden>
+    <button class="panel-close icon-button" type="button" aria-label="Close menu">×</button>
+    <a href="https://www.lashkaraa.com/en-au/collections/new-arrivals">New Arrivals</a>
+    <a href="https://www.lashkaraa.com/en-au/collections/salwar-kameez">Salwar Kameez</a>
+    <a href="https://www.lashkaraa.com/en-au/collections/lehenga">Lehengas</a>
+    <a href="https://www.lashkaraa.com/en-au/collections/sarees">Sarees</a>
+    <a href="https://www.lashkaraa.com/en-au/collections/mens">Men</a>
+    <a href="https://www.lashkaraa.com/en-au/collections/kids">Kids</a>
+    <a href="https://www.lashkaraa.com/en-au/collections/sale">Sale</a>
+  </nav>
 
-    <main>
-        <section class="hero" aria-label="Featured collection">
-            <video class="hero-video" autoplay muted playsinline loop poster="images/campaign-poster.webp">
-                <source src="video/4428d78975f3485b9c9b02b25e94519c.HD-720p-4.5Mbps-96058252.mp4" type="video/mp4">
-            </video>
-            <div class="hero-shade"></div>
-            <div class="hero-copy">
-                <p class="eyebrow">A season to remember</p>
-                <h1>Deewani</h1>
-                <a class="button button-light" href="#collections">Shop now</a>
-            </div>
-            <a class="scroll-cue" href="#collections"><span></span>Discover the collection</a>
-        </section>
+  <section class="search-panel" id="search-panel" aria-label="Search products" hidden>
+    <form class="search-form" role="search">
+      <label class="visually-hidden" for="site-search">Search products</label>
+      <input id="site-search" type="search" placeholder="Search for products" autocomplete="off">
+      <button class="icon-button search-submit" type="submit" aria-label="Search">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg>
+      </button>
+      <button class="icon-button search-close" type="button" aria-label="Close search">×</button>
+    </form>
+  </section>
 
-        <div class="announcement-bar" aria-label="Shopping benefits">
-            <div class="announcement-track">
-                <span>No duties or tariffs</span><i>✦</i>
-                <span>Complimentary shipping on orders over $249</span><i>✦</i>
-                <span>Seasonal sale — up to 50% off</span><i>✦</i>
-                <span>No duties or tariffs</span><i>✦</i>
-                <span>Complimentary shipping on orders over $249</span><i>✦</i>
-                <span>Seasonal sale — up to 50% off</span><i>✦</i>
-            </div>
+  <main id="main">
+    <section class="hero" id="top" aria-label="Deewani collection">
+      <video class="hero-video" autoplay muted playsinline loop poster="https://www.lashkaraa.com/cdn/shop/files/preview_images/2c5b36d1ab144d2d93318ed4665d5c76.thumbnail.0000000000_400x.jpg">
+        <source src="https://www.lashkaraa.com/cdn/shop/videos/c/vp/2c5b36d1ab144d2d93318ed4665d5c76/2c5b36d1ab144d2d93318ed4665d5c76.HD-720p-4.5Mbps-99563795.mp4?v=0" type="video/mp4">
+        <source src="video/4428d78975f3485b9c9b02b25e94519c.HD-720p-4.5Mbps-96058252.mp4" type="video/mp4">
+      </video>
+      <div class="hero-shade"></div>
+      <div class="hero-copy">
+        <h1>Deewani</h1>
+        <a class="button button-light" href="https://www.lashkaraa.com/en-au/collections/deewani">Shop now</a>
+      </div>
+    </section>
+
+    <aside class="announcement-bar" aria-label="Shopping benefits">
+      <div class="announcement-track">
+        <span>No Duties/Tariffs</span><i>✦</i>
+        <span>Free Shipping On All Orders Above $249 USD</span><i>✦</i>
+        <span>Sale Upto 50% OFF</span><i>✦</i>
+        <span>No Duties/Tariffs</span><i>✦</i>
+        <span>Free Shipping On All Orders Above $249 USD</span><i>✦</i>
+        <span>Sale Upto 50% OFF</span><i>✦</i>
+      </div>
+    </aside>
+
+    <section class="image-banners" aria-label="Shop our collections">
+      <a href="https://www.lashkaraa.com/en-au/collections/new-arrivals" aria-label="Shop new arrivals">
+        <img src="https://www.lashkaraa.com/cdn/shop/files/image_banner_1.jpg?width=900" alt="" loading="lazy">
+      </a>
+      <a href="https://www.lashkaraa.com/en-au/collections/salwar-kameez" aria-label="Shop salwar kameez">
+        <img src="https://www.lashkaraa.com/cdn/shop/files/image_banner_2.jpg?width=900" alt="" loading="lazy">
+      </a>
+      <a href="https://www.lashkaraa.com/en-au/collections/sarees" aria-label="Shop sarees">
+        <img src="https://www.lashkaraa.com/cdn/shop/files/image_banner_3.jpg?width=900" alt="" loading="lazy">
+      </a>
+      <a href="https://www.lashkaraa.com/en-au/collections/mens" aria-label="Shop menswear">
+        <img src="https://www.lashkaraa.com/cdn/shop/files/image_banner_4.jpg?width=900" alt="" loading="lazy">
+      </a>
+    </section>
+
+    <section class="bestsellers" aria-labelledby="bestsellers-title">
+      <div class="bestsellers-image">
+        <img src="https://www.lashkaraa.com/cdn/shop/files/jugni_banners-05_26aaadb4-799b-4a37-9616-5814c89eb719.png?width=1400" alt="" loading="lazy">
+      </div>
+      <div class="bestsellers-copy">
+        <p class="eyebrow">Loved by you</p>
+        <h2 id="bestsellers-title">Bestsellers</h2>
+        <p>Our bestselling collection brings together the most-loved pieces from Lashkaraa. Each outfit is handpicked for its timeless elegance, intricate craftsmanship, and versatility. From richly embroidered lehengas to flowing sarees and perfectly tailored salwar kameez, these are the styles our customers return to again and again.</p>
+        <a class="button button-dark" href="https://www.lashkaraa.com/en-au/collections/bestsellers">Shop now</a>
+      </div>
+    </section>
+
+    <section class="products section-wrap" id="ready-to-ship" aria-labelledby="products-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Ready when you are</p>
+          <h2 id="products-title">In A Rush? Shop Ready To Ship</h2>
         </div>
+        <a class="text-link" href="https://www.lashkaraa.com/en-au/collections/ready-to-ship">Shop all <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="product-grid">
+        <article class="product-card" data-product="dusty blue embroidered net lehenga">
+          <a class="product-image" href="https://www.lashkaraa.com/en-au/products/dusty-blue-embroidered-net-lehenga">
+            <img src="https://www.lashkaraa.com/cdn/shop/products/dusty-blue-embroidered-net-lehenga-4921188.jpg?width=700" alt="Dusty Blue Embroidered Net Lehenga" loading="lazy">
+            <span class="product-tag">Ships in 24 hours</span>
+          </a>
+          <a class="product-name" href="https://www.lashkaraa.com/en-au/products/dusty-blue-embroidered-net-lehenga">Dusty Blue Embroidered Net Lehenga</a>
+          <p class="product-price">Sale price $244.00</p>
+        </article>
+        <article class="product-card" data-product="black and gold embroidered satin lehenga">
+          <a class="product-image" href="https://www.lashkaraa.com/en-au/products/black-and-gold-embroidered-satin-lehenga">
+            <img src="https://www.lashkaraa.com/cdn/shop/products/black-and-gold-embroidered-satin-lehenga-1273579.jpg?width=700" alt="Black and Gold Embroidered Satin Lehenga" loading="lazy">
+            <span class="product-tag">Bestseller</span>
+          </a>
+          <a class="product-name" href="https://www.lashkaraa.com/en-au/products/black-and-gold-embroidered-satin-lehenga">Black and Gold Embroidered Satin Lehenga</a>
+          <p class="product-price">Sale price $244.00</p>
+        </article>
+        <article class="product-card" data-product="light pink thread embroidered anarkali">
+          <a class="product-image" href="https://www.lashkaraa.com/en-au/products/light-pink-thread-embroidered-anarkali">
+            <img src="https://www.lashkaraa.com/cdn/shop/products/light-pink-thread-embroidered-anarkali-6576303.jpg?width=700" alt="Light Pink Thread Embroidered Anarkali" loading="lazy">
+            <span class="product-tag">Ships in 24 hours</span>
+          </a>
+          <a class="product-name" href="https://www.lashkaraa.com/en-au/products/light-pink-thread-embroidered-anarkali">Light Pink Thread Embroidered Anarkali</a>
+          <p class="product-price">Sale price $374.00</p>
+        </article>
+        <article class="product-card" data-product="off white multicolor embroidered gharara suit">
+          <a class="product-image" href="https://www.lashkaraa.com/en-au/products/off-white-multicolor-embroidered-gharara-suit">
+            <img src="https://www.lashkaraa.com/cdn/shop/products/off-white-multicolor-embroidered-gharara-suit-9196797.jpg?width=700" alt="Off White Multicolor Embroidered Gharara Suit" loading="lazy">
+            <span class="product-tag">Bestseller</span>
+          </a>
+          <a class="product-name" href="https://www.lashkaraa.com/en-au/products/off-white-multicolor-embroidered-gharara-suit">Off White Multicolor Embroidered Gharara Suit</a>
+          <p class="product-price">Sale price $249.00</p>
+        </article>
+      </div>
+    </section>
 
-        <section class="collections section-wrap" id="collections">
-            <div class="section-heading">
-                <p class="eyebrow">Find your moment</p>
-                <h2>Shop the collections</h2>
-            </div>
-            <div class="collection-grid">
-                <a class="collection-card collection-ready" href="#ready-to-ship">
-                    <span class="collection-label">Ready to ship</span>
-                    <span class="collection-arrow" aria-hidden="true">↗</span>
-                </a>
-                <a class="collection-card collection-loved" href="#ready-to-ship">
-                    <span class="collection-label">Bestsellers</span>
-                    <span class="collection-arrow" aria-hidden="true">↗</span>
-                </a>
-                <a class="collection-card collection-new" href="#ready-to-ship">
-                    <span class="collection-label">New arrivals</span>
-                    <span class="collection-arrow" aria-hidden="true">↗</span>
-                </a>
-                <a class="collection-card collection-occasion" href="#about">
-                    <span class="collection-label">The celebration edit</span>
-                    <span class="collection-arrow" aria-hidden="true">↗</span>
-                </a>
-            </div>
-        </section>
+    <section class="second-campaign" aria-label="Lumiére collection">
+      <video autoplay muted playsinline loop poster="https://www.lashkaraa.com/cdn/shop/files/preview_images/3d27c4e96f014c12b40e4d7098ef06d7.thumbnail.0000000000_400x.jpg">
+        <source src="https://www.lashkaraa.com/cdn/shop/videos/c/vp/3d27c4e96f014c12b40e4d7098ef06d7/3d27c4e96f014c12b40e4d7098ef06d7.HD-720p-4.5Mbps-96058254.mp4?v=0" type="video/mp4">
+      </video>
+      <div class="campaign-copy">
+        <h2>Lumiére</h2>
+        <a class="button button-light" href="https://www.lashkaraa.com/en-au/collections/lumiere">Shop now</a>
+      </div>
+    </section>
 
-        <section class="story-section" id="about">
-            <div class="story-image" role="img" aria-label="A look from the Deewani campaign"></div>
-            <div class="story-copy">
-                <p class="eyebrow">Made for your moments</p>
-                <h2>Tradition, with a little more you.</h2>
-                <p>Discover thoughtfully detailed occasionwear made for the celebrations, big and small, that stay with you.</p>
-                <a class="text-link" href="#ready-to-ship">Explore the edit <span aria-hidden="true">→</span></a>
-            </div>
-        </section>
+    <section class="social-proof section-wrap">
+      <p class="eyebrow">The Lashkaraa community</p>
+      <h2>Your Favorite Looks: Styled IRL</h2>
+      <div class="social-grid">
+        <img src="https://cdn.shopify.com/s/files/1/2482/1950/files/black-embroidered-georgette-saree-2773806.png?width=500" alt="Black embroidered georgette saree" loading="lazy">
+        <img src="https://cdn.shopify.com/s/files/1/2482/1950/files/black-embroidered-net-lehenga-2625641.png?width=500" alt="Black embroidered net lehenga" loading="lazy">
+        <img src="https://www.lashkaraa.com/cdn/shop/products/dusty-blue-embroidered-net-lehenga-4921188.jpg?width=500" alt="Dusty blue embroidered net lehenga" loading="lazy">
+        <img src="https://www.lashkaraa.com/cdn/shop/products/light-pink-thread-embroidered-anarkali-6576303.jpg?width=500" alt="Light pink thread embroidered anarkali" loading="lazy">
+      </div>
+    </section>
 
-        <section class="products section-wrap" id="ready-to-ship">
-            <div class="section-heading product-heading">
-                <div>
-                    <p class="eyebrow">Your favourites, closer</p>
-                    <h2>In a rush? Ready to ship.</h2>
-                </div>
-                <a class="text-link" href="#collections">Shop all <span aria-hidden="true">→</span></a>
-            </div>
-            <div class="product-grid">
-                <article class="product-card">
-                    <a class="product-image product-blue" href="#collections" aria-label="View embroidered blue lehenga">
-                        <span class="product-tag">Ships in 24 hours</span>
-                    </a>
-                    <h3>Embroidered occasion lehenga</h3>
-                    <p>From $244 AUD</p>
-                </article>
-                <article class="product-card">
-                    <a class="product-image product-rose" href="#collections" aria-label="View rose pink anarkali">
-                        <span class="product-tag">Bestseller</span>
-                    </a>
-                    <h3>Rose threadwork anarkali</h3>
-                    <p>From $374 AUD</p>
-                </article>
-                <article class="product-card">
-                    <a class="product-image product-gold" href="#collections" aria-label="View gold embroidered gharara">
-                        <span class="product-tag">Ships in 24 hours</span>
-                    </a>
-                    <h3>Gold embroidered gharara</h3>
-                    <p>From $259 AUD</p>
-                </article>
-                <article class="product-card">
-                    <a class="product-image product-green" href="#collections" aria-label="View green silk lehenga">
-                        <span class="product-tag">Bestseller</span>
-                    </a>
-                    <h3>Emerald silk lehenga</h3>
-                    <p>From $224 AUD</p>
-                </article>
-            </div>
-        </section>
-    </main>
+    <section class="instagram section-wrap">
+      <p class="eyebrow">Follow us on Instagram</p>
+      <h2>@Lashkaraa</h2>
+      <a class="text-link" href="https://www.instagram.com/lashkaraa/">Follow along <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
 
-    <footer class="site-footer">
-        <a class="wordmark" href="#">LASHKARAA</a>
-        <p>Made for all the moments worth dressing up for.</p>
-        <a href="#collections">Back to the collections ↑</a>
-    </footer>
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a class="brand" href="#top" aria-label="Lashkaraa home">
+          <img src="https://www.lashkaraa.com/cdn/shop/files/theme-logo.png?v=1709477478&amp;width=320" alt="Lashkaraa">
+        </a>
+        <p>Indian occasionwear, made for your moments.</p>
+      </div>
+      <div class="footer-column">
+        <h2>Help</h2>
+        <a href="https://www.lashkaraa.com/en-au/pages/contact-us">Contact Us</a>
+        <a href="https://www.lashkaraa.com/en-au/pages/shipping-info">Shipping Info</a>
+        <a href="https://www.lashkaraa.com/en-au/pages/returns-exchanges">Returns &amp; Exchanges</a>
+        <a href="https://www.lashkaraa.com/en-au/pages/faq">FAQ</a>
+        <a href="https://www.lashkaraa.com/en-au/pages/sizing-info">Sizing Info</a>
+      </div>
+      <div class="footer-column">
+        <h2>About</h2>
+        <a href="https://www.lashkaraa.com/en-au/pages/about-us">About Us</a>
+        <a href="https://www.lashkaraa.com/en-au/pages/loyalty">Loyalty</a>
+        <a href="https://www.lashkaraa.com/en-au/blogs/news">Blog</a>
+        <a href="https://www.lashkaraa.com/en-au/pages/reviews">Reviews</a>
+      </div>
+      <div class="footer-column">
+        <h2>Shop</h2>
+        <a href="https://www.lashkaraa.com/en-au/collections/new-arrivals">New Arrivals</a>
+        <a href="https://www.lashkaraa.com/en-au/collections/salwar-kameez">Salwar Kameez</a>
+        <a href="https://www.lashkaraa.com/en-au/collections/sarees">Sarees</a>
+        <a href="https://www.lashkaraa.com/en-au/collections/mens">Mens</a>
+        <a href="https://www.lashkaraa.com/en-au/collections/kids">Kids</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-legal">
+        <a href="https://www.lashkaraa.com/en-au/policies/terms-of-service">Terms of Service</a>
+        <a href="https://www.lashkaraa.com/en-au/policies/refund-policy">Returns &amp; Exchanges</a>
+        <a href="https://www.lashkaraa.com/en-au/policies/privacy-policy">Privacy Policy</a>
+      </div>
+      <span>Australia (AUD $)</span>
+      <span>© 2026 Lashkaraa</span>
+    </div>
+  </footer>
+
+  <div class="newsletter-tab">
+    <button class="newsletter-open" type="button" aria-expanded="false" aria-controls="newsletter-panel">Get 10% Off</button>
+    <button class="newsletter-dismiss-tab" type="button" aria-label="Dismiss signup offer">×</button>
+  </div>
+  <section class="newsletter-panel" id="newsletter-panel" aria-label="Newsletter signup" hidden>
+    <button class="newsletter-dismiss icon-button" type="button" aria-label="Close newsletter signup">×</button>
+    <p class="newsletter-logo">LASHKARAA</p>
+    <h2>Join Lashkaraa And Save</h2>
+    <p>Get <strong>10% off</strong> your first order and get our latest releases and exclusive deals straight to your inbox.</p>
+    <form class="newsletter-form">
+      <label class="visually-hidden" for="newsletter-email">Enter your email address</label>
+      <input id="newsletter-email" type="email" placeholder="Enter your email address" required>
+      <button class="button button-gold" type="submit">Subscribe</button>
+      <p class="form-message" aria-live="polite" hidden></p>
+    </form>
+  </section>
+
+  <button class="chat-button" type="button" aria-label="Chat with us" aria-expanded="false" aria-controls="chat-panel">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-8 8 8.8 8.8 0 0 1-3.5-.7L4 20l1.2-3.5A8 8 0 1 1 20 11.5Z"></path><circle cx="9" cy="12" r=".7"></circle><circle cx="12" cy="12" r=".7"></circle><circle cx="15" cy="12" r=".7"></circle></svg>
+  </button>
+  <div class="chat-panel" id="chat-panel" hidden>
+    <strong>Need a hand?</strong>
+    <p>Our team is here to help with your order.</p>
+    <a href="https://www.lashkaraa.com/en-au/pages/contact-us">Visit our help center</a>
+  </div>
+
+  <script>
+    const menuButton = document.querySelector(".menu-button");
+    const menuPanel = document.querySelector("#menu-panel");
+    const searchButton = document.querySelector(".search-button");
+    const searchPanel = document.querySelector("#search-panel");
+    const searchInput = document.querySelector("#site-search");
+    const newsletterButton = document.querySelector(".newsletter-open");
+    const newsletterTab = document.querySelector(".newsletter-tab");
+    const newsletterPanel = document.querySelector("#newsletter-panel");
+    const chatButton = document.querySelector(".chat-button");
+    const chatPanel = document.querySelector("#chat-panel");
+
+    function setPanel(button, panel, open) {
+      button.setAttribute("aria-expanded", String(open));
+      panel.hidden = !open;
+    }
+
+    menuButton.addEventListener("click", () => {
+      const open = menuPanel.hidden;
+      setPanel(menuButton, menuPanel, open);
+      if (open) setPanel(searchButton, searchPanel, false);
+    });
+    document.querySelector(".panel-close").addEventListener("click", () => setPanel(menuButton, menuPanel, false));
+
+    searchButton.addEventListener("click", () => {
+      const open = searchPanel.hidden;
+      setPanel(searchButton, searchPanel, open);
+      if (open) {
+        setPanel(menuButton, menuPanel, false);
+        searchInput.focus();
+      }
+    });
+    document.querySelector(".search-close").addEventListener("click", () => {
+      setPanel(searchButton, searchPanel, false);
+      searchInput.value = "";
+      filterProducts("");
+    });
+
+    function filterProducts(query) {
+      const normalizedQuery = query.trim().toLowerCase();
+      document.querySelectorAll(".product-card").forEach(card => {
+        card.hidden = !card.dataset.product.includes(normalizedQuery);
+      });
+    }
+    const desktopSearchInput = document.querySelector("#desktop-search-input");
+    desktopSearchInput.addEventListener("input", () => filterProducts(desktopSearchInput.value));
+    document.querySelector(".desktop-search").addEventListener("submit", event => {
+      event.preventDefault();
+      filterProducts(desktopSearchInput.value);
+      document.querySelector("#ready-to-ship").scrollIntoView({ behavior: "smooth" });
+    });
+    document.querySelector(".search-form").addEventListener("submit", event => {
+      event.preventDefault();
+      filterProducts(searchInput.value);
+      document.querySelector("#ready-to-ship").scrollIntoView({ behavior: "smooth" });
+      setPanel(searchButton, searchPanel, false);
+    });
+    searchInput.addEventListener("input", () => filterProducts(searchInput.value));
+
+    newsletterButton.addEventListener("click", () => {
+      const open = newsletterPanel.hidden;
+      setPanel(newsletterButton, newsletterPanel, open);
+    });
+    document.querySelector(".newsletter-dismiss").addEventListener("click", () => setPanel(newsletterButton, newsletterPanel, false));
+    document.querySelector(".newsletter-dismiss-tab").addEventListener("click", () => {
+      newsletterTab.hidden = true;
+      setPanel(newsletterButton, newsletterPanel, false);
+    });
+    document.querySelector(".newsletter-form").addEventListener("submit", event => {
+      event.preventDefault();
+      const message = newsletterPanel.querySelector(".form-message");
+      message.textContent = "Newsletter sign-up is not connected in this preview.";
+      message.hidden = false;
+    });
+
+    chatButton.addEventListener("click", () => {
+      setPanel(chatButton, chatPanel, chatPanel.hidden);
+    });
+  </script>
 </body>
 </html>
